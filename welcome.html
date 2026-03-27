@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome - Car Booking</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Optional: Some basic styling -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8f8ff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 2rem 3rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,.1);
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 1.5rem;
+            color: #2d7be5;
+        }
+        button {
+            font-size: 1.1rem;
+            margin: 1rem;
+            padding: 0.8rem 2rem;
+            border-radius: 5px;
+            border: none;
+            background: #2d7be5;
+            color: white;
+            cursor: pointer;
+            transition: background .2s;
+        }
+        button:hover {
+            background: #155fa0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Car Booking!</h1>
+        <p>How would you like to proceed?</p>
+        <button onclick="location.href='signin.html'">Sign In</button>
+        <button onclick="location.href='register.html'">Sign Up</button>
+    </div>
+</body>
+</html>

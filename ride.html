@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wild Rydes - Ride</title>
+    <!-- ArcGIS JS API -->
+    <script src="https://js.arcgis.com/4.18/"></script>
+    <!-- jQuery first, if not already loaded elsewhere -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- App config, Cognito auth, then Map, then Ride features -->
+    <script src="js/config.js"></script>
+    <script src="js/cognito-auth.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/ride.js"></script>
+    <style>
+        #map { width: 100vw; height: 500px; border: 1px solid #ddd; }
+        #controls { position: absolute; top: 20px; right: 20px; background: #fff; padding: 15px; box-shadow: 0 0 3px #ccc; }
+        #updates { list-style: none; margin-top: 25px; }
+        .authToken { word-break: break-all; }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <div id="controls">
+        <button id="request" disabled>Set pickup</button>
+        <button id="signOut">Sign out</button>
+        <div id="noApiMessage" style="display: none; color: red;">API not configured!</div>
+        <div id="authStatus"></div>
+    </div>
+    <ul id="updates"></ul>
+</body>
+</html>
+
